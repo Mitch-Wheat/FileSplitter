@@ -21,7 +21,7 @@ namespace FileSplitter
                 { "o|outputfolder=", "the output folder.", o => commandLineOptions.OutputFolder = o },
                 { "d|headerrows=", "the number of header rows.", (int d) => commandLineOptions.NumHeaderRows = d },
                 { "m|maxlinesperfile=", "the maximum number of lines in each split file.", (int m) => commandLineOptions.MaxLinesPerFile = m },
-                { "r|repeatheaderrows=", "repeat header rows in each split file.", r => commandLineOptions.RepeatHeaderRows = r != null },
+                { "r|repeatheaderrows", "repeat header rows in each split file.", r => commandLineOptions.RepeatHeaderRows = r != null },
                 { "c|compress", "gzip compress split files (zip).", c => commandLineOptions.Compress = c != null },
                 { "b|outputfilenamebase=", "specifies filename base for split files.", b => commandLineOptions.OutputFilenameBase = b },
                 //TODO: { "w|overwrite", "overwrite output files.", w => commandLineOptions.OverwriteOutputFiles = w != null },
