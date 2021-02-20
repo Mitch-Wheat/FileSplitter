@@ -24,7 +24,7 @@ namespace FileSplitter
                 { "r|repeatheaderrows=", "repeat header rows in each split file.", r => commandLineOptions.RepeatHeaderRows = r != null },
                 { "c|compress", "gzip compress split files (zip).", c => commandLineOptions.Compress = c != null },
                 { "b|outputfilenamebase=", "specifies filename base for split files.", b => commandLineOptions.OutputFilenameBase = b },
-                { "w|overwrite", "overwrite output files.", w => commandLineOptions.OverwriteOutputFiles = w != null },
+                //TODO: { "w|overwrite", "overwrite output files.", w => commandLineOptions.OverwriteOutputFiles = w != null },
                 { "s|recursesubfolders", "find matching files in all sub folders.", s => commandLineOptions.RecurseSubfolders = s != null },
                 { "h|help", "show this message and exit", h => showHelp = h != null },
             };
