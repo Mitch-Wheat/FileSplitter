@@ -19,9 +19,7 @@ Options:
   -c, --compress               : gzip compress split files.
   
   -b, --outputfilenamebase=VALUE : specifies optional filename base for split files.
-                             
-  -w, --overwrite              : overwrite output files.
-  
+ 
   -s, --recursesubfolders      : find matching files in all sub folders.
   
   -h, --help                   : show this message and exit
