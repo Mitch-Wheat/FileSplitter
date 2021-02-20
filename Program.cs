@@ -21,7 +21,6 @@ namespace FileSplitter
                 { "o|outputfolder=", "the output folder.", o => commandLineOptions.OutputFolder = o },
                 { "d|headerrows=", "the number of header rows.", (int d) => commandLineOptions.NumHeaderRows = d },
                 { "m|maxlinesperfile=", "the maximum number of lines in each split file.", (int m) => commandLineOptions.MaxLinesPerFile = m },
-                //{ "x|maxfilesizeMB=", "the maximum size of each split file (MB).", (int x) => commandLineOptions.MaxFileSizeMB = x },
                 { "r|repeatheaderrows=", "repeat header rows in each split file.", r => commandLineOptions.RepeatHeaderRows = r != null },
                 { "c|compress", "gzip compress split files (zip).", c => commandLineOptions.Compress = c != null },
                 { "b|outputfilenamebase=", "specifies filename base for split files.", b => commandLineOptions.OutputFilenameBase = b },
@@ -46,7 +45,7 @@ namespace FileSplitter
                 if (string.IsNullOrWhiteSpace(commandLineOptions.OutputFolder))
                     throw new InvalidOperationException("Missing required option -o=outputfolder");
 
-                if (commandLineOptions.MaxLinesPerFile == 0L) //&& commandLineOptions.MaxFileSizeMB == 0 )
+                if (commandLineOptions.MaxLinesPerFile == 0L)
                     throw new InvalidOperationException("Missing required option, one of -m=maxlinesperfile or -x=maxfilesizeMB");
 
                 Split(commandLineOptions, extra);
