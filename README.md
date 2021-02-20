@@ -14,7 +14,7 @@ Options:
   
   -m, --maxlinesperfile=VALUE  : the maximum number of lines in each split file.
                              
-  -r, --repeatheaderrows=VALUE : repeat header rows in each split file.
+  -r, --repeatheaderrows       : repeat header rows in each split file.
                              
   -c, --compress               : gzip compress split files.
   
