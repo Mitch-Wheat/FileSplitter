@@ -2,7 +2,7 @@
 
 Copyright for Fody held by Simon Cropp and is provided under the MIT license: https://github.com/Fody/Fody
 
-Copyright for Fody.Costura held by Simon Cropp and cpontributors and is provided under the MIT license: https://github.com/Fody/Costura
+Copyright for Fody.Costura held by Simon Cropp and contributors and is provided under the MIT license: https://github.com/Fody/Costura
 
 Copyright for Mono.Options held by Copyright (c) .NET Foundation Contributors and is provided under the MIT license: https://github.com/xamarin/XamarinComponents/tree/master/XPlat/Mono.Options
 
