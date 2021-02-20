@@ -3,6 +3,7 @@
 Splits text and .csv files
 
 Options:
+
   -i, --inputfilepattern=VALUE
                              the files(s) to split.
                              
