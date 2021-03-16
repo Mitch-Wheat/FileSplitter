@@ -46,7 +46,7 @@ namespace FileSplitter
                     throw new InvalidOperationException("Missing required option -o=outputfolder");
 
                 if (commandLineOptions.MaxLinesPerFile == 0L)
-                    throw new InvalidOperationException("Missing required option, one of -m=maxlinesperfile or -x=maxfilesizeMB");
+                    throw new InvalidOperationException("Missing required option -m=maxlinesperfile");
 
                 Split(commandLineOptions, extra);
             }
